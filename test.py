@@ -10,5 +10,5 @@ import streamlit as st,pandas as pd,numpy as np,os,pickle
 
 st.title('Henry Testing')
 st.subheader('Raw data')
-data=pd.read_csv('vc1902_inline.csv').dropna(axis=1,thresh=30000).head(200)
+data=pd.read_csv('vc1902_inline.csv')
 st.write(data)
